@@ -1,0 +1,54 @@
+# _____________________ Information _____________________ #
+# System configuration For Automated Segmentation
+# 
+# Chidren's Hospital of Philadelphia
+# Author: Hayden Fisher
+# Date: March 20, 2026
+
+# _____________________ Data Paths ______________________ #
+# Inputs should include directory location for 
+# input data (INDIR) and output data (OUTDIR) for both
+# training (TRAIN) and testing (TEST) data
+
+INDIR_TRAIN	T:\Hayden\Ensemble_Segmentation_Public\Input Data
+OUTDIR_TRAIN	T:\Hayden\Ensemble_Segmentation_Public\Output Data
+
+INDIR_TEST	T:\Hayden\Ensemble_Segmentation_Public\Input Data
+OUTDIR_TEST	T:\Hayden\Ensemble_Segmentation_Public\Output Data
+
+# _____________________ Input Type ______________________ #
+# Inputs should include type of data input for testing
+# (TYPE_TEST) and training (TYPE_TRAIN). Options include
+# single, multi
+
+TYPE_TEST	single
+IM_SIZE		128
+
+# _____________________ Landmarks _______________________ #
+# Input is 0 indicating landmarks have not yet been selected
+# or 1 indicating that landmarks will be intered when running
+# segmentation or training code.
+
+LANDMARK_TEST	0
+LANDMARK_TRAIN	0
+
+# ____________________ LED Settings _____________________ #
+# Inputs should include the number of LEDs being used by
+# imaging system (NUMLED), an array of wavelengths inluded
+# in input data (WAVELENGTHS), an array indicating LEDs
+# used for fluorescence imaging (FLUORESCENCE), and an array 
+# indicating which wavelengths should be utilized by the 
+# segmentation algorithm (UTILIZED).
+
+WAVELENGTHS	[470, 530, 590, 625]
+FLUORESCENCE	[0, 0, 0, 0]
+INCLUDE		[1, 1, 1, 1]
+
+# _______________________ TUNING ________________________ #
+# Inputs should include parameters for weighting function
+# slope (SIGMOID_SLOPE), weighting function shift 
+# (SIGMOID_SHIFT), and edge smoothing threshold (THRESHOLD).
+
+SIGMOID_SLOPE	8
+SIGMOID_SHIFT	4		
+THRESHOLD	0.6
