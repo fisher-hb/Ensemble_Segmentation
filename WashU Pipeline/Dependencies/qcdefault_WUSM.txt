@@ -1,0 +1,32 @@
+# OIS Processing Flags Configuration
+
+# -----------
+# Default QC Flags
+# -----------
+
+# Threshold for making isbrain
+# Minimum value Flag (above calibration offset)
+LAMBDA_MIN 10
+
+# SNR Flag: sqrt(2)
+LAMBDA_SNR 		1.717
+LAMBDA_SNR_CALIB	 4
+
+# Local Correlation Flag
+LAMBDA_RLOCAL 0
+
+# STD Flag
+# LAMBDA_STD [0.05 0.1 0.02]
+LAMBDA_STD 0.02
+
+# Display Figures?
+DISPFIG		1
+
+# Detrend?
+DETREND	1
+
+# Normalization scheme
+NORM 0
+
+# Frames to Trim from Beginning of File
+TRIMFRAMES	0
